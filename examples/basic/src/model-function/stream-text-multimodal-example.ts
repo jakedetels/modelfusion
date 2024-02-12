@@ -6,9 +6,7 @@ import path from "node:path";
 dotenv.config();
 
 async function main() {
-  const image = fs.readFileSync(
-    path.join(__dirname, "../../data/example-image.png")
-  );
+  const image = fs.readFileSync(path.join("data", "example-image.png"));
 
   const textStream = await streamText({
     model: openai.ChatTextGenerator({

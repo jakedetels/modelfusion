@@ -57,7 +57,6 @@
     "clean:build": "rimraf build dist",
     "build": "tsup && pnpm build:copy-files",
     "build:copy-files": "copyfiles --flat package.json ./README.md ../../LICENSE ./CHANGELOG.md dist",
-    "build:watch": "tsup --watch src",
     "dist": "pnpm clean:build && pnpm lint && pnpm build"
   },
   "peerDependencies": {
@@ -73,6 +72,6 @@
     "eslint": "^8.45.0",
     "eslint-config-prettier": "9.1.0",
     "fastify": "^4.0.0",
-    "modelfusion": "workspace:*"
+    "modelfusion": "0.136.0"
   }
 }

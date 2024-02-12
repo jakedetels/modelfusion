@@ -8,14 +8,13 @@ Ask questions about a PDF document and get answers from the document.
 
 1. Create .env file with the following content:
 
-```sh
+```
 OPENAI_API_KEY="YOUR_OPENAI_API_KEY"
 ```
 
-2. Run the following commands from the root directory of the modelfusion repo:
+2. Run the following commands:
 
 ```sh
 pnpm install
-pnpm build
-pnpm tsx examples/pdf-chat-terminal/src/main.ts -f my.pdf
+pnpm tsx src/main.ts -f my.pdf
 ```
